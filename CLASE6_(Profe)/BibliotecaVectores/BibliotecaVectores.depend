@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1567774060 source:c:\users\alumno\desktop\clase6\utn_inputs.c
+	<stdio.h>
+	<stdlib.h>
+
+1568035043 source:c:\users\alumno\desktop\clase6\utn_array.c
+	<stdio.h>
+	<stdlib.h>
+	"UTN_Inputs.h"
+
+1567773918 c:\users\alumno\desktop\clase6\utn_inputs.h
+

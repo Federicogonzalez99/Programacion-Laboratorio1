@@ -45,3 +45,5 @@ Param1: Array por referencia
 Param2: Elementos del Array
 */
 int OrdenaArrayInt(int* pArray,int limite);
+
+int VerificarNumChar(char CadenaNum[], int limite);

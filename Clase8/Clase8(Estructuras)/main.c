@@ -24,13 +24,13 @@ int main()
     fflush(stdin);
 
     printf("Ingrese el numero: ");
-    scanf("%d", agenda.numero);
+    scanf("%d", &agenda.numero);
 
 
-    printf("\nDATOS PERSONALES\N");
-    printf("%s", agenda.nombre);
-    printf("%s", agenda.apellido);
-    printf("%s", agenda.calle);
-    printf("%d", agenda.numero);
+    printf("\nDATOS PERSONALES\n");
+    printf("\n%s", agenda.nombre);
+    printf("\n%s", agenda.apellido);
+    printf("\n%s", agenda.calle);
+    printf("\n%d", agenda.numero);
     return 0;
 }

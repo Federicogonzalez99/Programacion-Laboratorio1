@@ -1,0 +1,35 @@
+# depslib dependency file v1.0
+1568806442 source:c:\users\alumno\desktop\prog_agosto2019\bibliotecautn\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+	"utn.h"
+
+1568806442 c:\users\alumno\desktop\prog_agosto2019\bibliotecautn\utn.h
+
+1568816877 source:c:\users\alumno\desktop\prog_agosto2019\bibliotecautn\utn_array.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn_array.h"
+	"utn.h"
+
+1568818642 c:\users\alumno\desktop\prog_agosto2019\bibliotecautn\utn_array.h
+
+1568816922 source:c:\users\alumno\desktop\prog_agosto2019\bibliotecautn\utn_menu.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn_array.h"
+	"utn.h"
+
+1568818449 source:c:\users\alumno\desktop\prog_agosto2019\clase 9\main.c
+	<stdio.h>
+	<stdlib.h>
+	"../BibliotecaUtn/utn.h"
+	"../BibliotecaUtn/utn_array.h"
+	"../BibliotecaUtn/utn_menu.h"
+
+1568806442 c:\users\alumno\desktop\prog_agosto2019\bibliotecautn\utn_menu.h
+

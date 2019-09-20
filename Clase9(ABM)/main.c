@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "Bibliotecaaautn.h"
 #define QTY_PERSONAS 5
 typedef struct
 {

@@ -79,19 +79,19 @@ int main()
                 }
 
                 printf("\nALTA\n");
-                if (!getStringLetras("Ingrese el nombre: ",auxiliarNombreStr))
+                if (getStringLetras("Ingrese el nombre: ",auxiliarNombreStr) == 0)
                 {
                     printf ("El nombre debe estar compuesto solo por letras\n");
                     break;
                 }
 
-                if (!getStringLetras("Ingrese el apellido: ",auxiliarApellidoStr))
+                if (getStringLetras("Ingrese el apellido: ",auxiliarApellidoStr) == 0)
                 {
                     printf ("El apellido debe estar compuesto solo por letras\n");
                     break;
                 }
 
-                if (!getStringNumeros("Ingrese el legajo: ",auxiliarLegajoStr))
+                if (getStringNumeros("Ingrese el legajo: ",auxiliarLegajoStr) == 0)
                 {
                     printf ("El legajo debe ser numerico\n");
                     break;
@@ -136,7 +136,7 @@ int main()
                     break;
                 }
 
-                auxiliarLegajo= atoi(auxiliarLegajoStr);
+                auxiliarLegajo = atoi(auxiliarLegajoStr);
 
                 indiceResultadoBusqueda = buscarPrimerOcurrencia(arrayPersonas,QTY_PERSONAS,atoi(auxiliarLegajoStr));
 
@@ -169,7 +169,7 @@ int main()
                 break;
 
             case 4:
-                printf("\nLISTAR\n");
+                    printf("\nLISTAR\n");
                 for(i=0;i < QTY_PERSONAS; i++)
                 {
                     if(arrayPersonas[i].legajo != -1)

@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1569245574 source:c:\users\alumno\desktop\tnn\bibliotecas\bibliotecasutn.c
+	<stdio.h>
+	<stdlib.h>
+

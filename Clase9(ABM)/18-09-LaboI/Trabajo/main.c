@@ -206,9 +206,9 @@ int main()
          }
     }
 
-
     return 0;
 }
+
 
 /**
  * \brief Inicializa un array de Personas con el valor recibido

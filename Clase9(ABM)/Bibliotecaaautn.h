@@ -1,3 +1,24 @@
+#ifndef ESTUDIANTE_H_INCLUDED
+#define ESTUDIANTE_H_INCLUDED
+
+#define TEXT_SIZE 20
+
+typedef struct
+{
+    int idEstudiante;
+    char nombre[TEXT_SIZE];
+    int edad;
+    int idCarrera;
+    int isEmpty;
+}eEstudiante;
+typedef struct
+{
+    int idCarrera;
+    char descripcionCarrera[TEXT_SIZE];
+    int isEmpty;
+}eCarrera;
+
+
 void inicializarArrayPersonas(ePersonas arrayPersonas[],int tamanio, int valor);
 int buscarLugarLibre(ePersonas arrayPersonas[], int tamanio, int valor);
 int pedirInt(char mensaje[]);

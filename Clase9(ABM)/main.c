@@ -2,19 +2,18 @@
 #include <stdlib.h>
 #include "Bibliotecaaautn.h"
 #define QTY_PERSONAS 5
-typedef struct
-{
-    char nombre[50];
-    char apellido[50];
-    int legajo;
-}ePersonas;
+
 
 void inicializarArrayPersonas(ePersonas arrayPersonas[],int tamanio, int valor);
 int buscarLugarLibre(ePersonas arrayPersonas[], int tamanio, int valor);
 
 int main()
 {
-    ePersonas arrayPersonas[QTY_PERSONAS];
+    eEstudiante arrayEstudiante[QTY_PERSONAS];
+    eCarrera arrayCarrera[QTY_PERSONAS]={
+    {1,"TSP",0},
+    {2,"TSAS",0}
+    };
     int opcion, indiceLugarLibre;
     inicializarArrayPersonas(arrayPersonas, QTY_PERSONAS, -1);
     printf("\n1.ALTA \n2.BAJA \n3.MODIFICACIONES \n4.LISTAR \n5.ORDENAR \n6.INFORMES \n7.SALIR\n");

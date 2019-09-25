@@ -32,7 +32,8 @@ int estudiante_alta(eEstudiante array[], int tamanio, int* contadorID)
         {
             (*contadorID)++;
             array[posicion].idEstudiante = *contadorID;
-            utn
+            utn_PedirEntero("\nIngrese una edad entre 18 y 100", "\nError",1,sizeof(int),18,100,2,&array[posicion].edad)
+            utn_PedirNombre("\nIngrese Nombre: ", "Error", 1, TEXT_SIZE)
         }
     }
 }

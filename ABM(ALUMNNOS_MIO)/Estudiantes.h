@@ -9,9 +9,4 @@ typedef struct
     int isEmpty;
 }eEstudiante;
 
-typedef struct
-{
-    int idCarrera;
-    char descripcionCarrera[TEXT_SIZE];
-    int isEmpty;
-}eCarrera;
+int estudiante_Inicializar(eEstudiante array[], int tamanio);

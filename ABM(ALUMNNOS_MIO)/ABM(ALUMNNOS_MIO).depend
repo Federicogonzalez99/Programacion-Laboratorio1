@@ -1,0 +1,24 @@
+# depslib dependency file v1.0
+1569418415 source:c:\users\alumno\desktop\utn\abm(alumnnos_mio)\estudiantes.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Estudiantes.h"
+	"Carrera.h"
+
+1569418447 c:\users\alumno\desktop\utn\abm(alumnnos_mio)\estudiantes.h
+
+1569414851 source:c:\users\alumno\desktop\utn\abm(alumnnos_mio)\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Estudiantes.h"
+	"utn.h"
+
+1569418415 c:\users\alumno\desktop\utn\abm(alumnnos_mio)\utn.h
+
+1569418416 source:c:\users\alumno\desktop\utn\abm(alumnnos_mio)\carrera.c
+	"Carrera.h"
+
+1569418430 c:\users\alumno\desktop\utn\abm(alumnnos_mio)\carrera.h
+

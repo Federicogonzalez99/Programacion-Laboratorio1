@@ -1,4 +1,10 @@
-estudiante_Inicializar(eEstudiante array[], int tamanio)
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include "Estudiantes.h"
+#include "Carrera.h"
+int estudiante_Inicializar(eEstudiante array[], int tamanio)
+
 {
     int retorno = -1;
     int i;
@@ -11,4 +17,22 @@ estudiante_Inicializar(eEstudiante array[], int tamanio)
         retorno = 0;
     }
     return retorno;
+}
+int estudiante_alta(eEstudiante array[], int tamanio, int* contadorID)
+{
+    int retorno = -1;
+    int posicion;
+    if(array != NULL && tamanio > 0 && contadorID != NULL)
+    {
+        if(estudiante_buscarEmpty(array, tamanio, &posicion)==-1)
+        {
+            printf("\nNo hay lugares vacios");
+        }
+        else
+        {
+            (*contadorID)++;
+            array[posicion].idEstudiante = *contadorID;
+            utn
+        }
+    }
 }

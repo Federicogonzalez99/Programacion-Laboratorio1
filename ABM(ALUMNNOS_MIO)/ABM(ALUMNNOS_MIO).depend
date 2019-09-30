@@ -22,3 +22,34 @@
 
 1569418430 c:\users\alumno\desktop\utn\abm(alumnnos_mio)\carrera.h
 
+1569447742 source:c:\users\fedegonzalez\desktop\utn\abm(alumnnos_mio)\carrera.c
+	"Carrera.h"
+
+1569447742 c:\users\fedegonzalez\desktop\utn\abm(alumnnos_mio)\carrera.h
+
+1569784493 source:c:\users\fedegonzalez\desktop\utn\abm(alumnnos_mio)\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Estudiantes.h"
+	"utn.h"
+	"Carrera.h"
+
+1569447742 c:\users\fedegonzalez\desktop\utn\abm(alumnnos_mio)\estudiantes.h
+
+1569784057 c:\users\fedegonzalez\desktop\utn\abm(alumnnos_mio)\utn.h
+
+1569784748 source:c:\users\fedegonzalez\desktop\utn\abm(alumnnos_mio)\estudiantes.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Estudiantes.h"
+	"Carrera.h"
+	"utn.h"
+
+1569784292 source:c:\users\fedegonzalez\desktop\utn\abm(alumnnos_mio)\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn.h"
+

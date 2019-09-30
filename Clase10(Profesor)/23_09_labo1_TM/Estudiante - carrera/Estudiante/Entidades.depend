@@ -253,3 +253,28 @@
 	<string.h>
 	"utn.h"
 
+1569447743 source:c:\users\fedegonzalez\desktop\utn\clase10(profesor)\23_09_labo1_tm\estudiante - carrera\estudiante\estudiante.c
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	"utn.h"
+	"estudiante.h"
+
+1569447743 c:\users\fedegonzalez\desktop\utn\clase10(profesor)\23_09_labo1_tm\estudiante - carrera\estudiante\utn.h
+
+1569447743 c:\users\fedegonzalez\desktop\utn\clase10(profesor)\23_09_labo1_tm\estudiante - carrera\estudiante\estudiante.h
+
+1569447743 source:c:\users\fedegonzalez\desktop\utn\clase10(profesor)\23_09_labo1_tm\estudiante - carrera\estudiante\informes.c
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	"utn.h"
+	"estudiante.h"
+
+1569447743 source:c:\users\fedegonzalez\desktop\utn\clase10(profesor)\23_09_labo1_tm\estudiante - carrera\estudiante\main.c
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	"utn.h"
+	"estudiante.h"
+

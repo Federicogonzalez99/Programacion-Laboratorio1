@@ -15,11 +15,16 @@ int utn_PedirEntero(char* msg,char* msgError,int minSize,int maxSize,int min,int
         {
             if(utn_PedirString(msg,msgError,minSize,maxSize,&reintentos,bufferStr)==0) //==0 sin errores !0
             {
-                if(esNumerico(bufferStr)==1)
+                if(utn_esNumerico(bufferStr)==1)
                 {
+                    if(utn_validarRango(bufferStr, min, max)== 0)
+                    {
+
                     *input=atoi(bufferStr);     // unsigned long int strtoul(const char *str, char **end, int base)?
                     retorno=0;
                     break;
+                    }
+
                 }
                 else
                 {
@@ -32,6 +37,11 @@ int utn_PedirEntero(char* msg,char* msgError,int minSize,int maxSize,int min,int
     }
     return retorno;
 }
+
+
+
+
+
 int utn_PedirString(char* msg, char* msgError, int min, int max, int* reintentos, char* resultado)
 {
     int retorno=-1;
@@ -54,14 +64,13 @@ int utn_PedirString(char* msg, char* msgError, int min, int max, int* reintentos
             }
             printf("%s 1",msgError);
             (*reintentos)--;
-        }
-        while((*reintentos)>=0);
+        }while((*reintentos)>=0);
     }
     return retorno;
 
 
 }
-int esNumerico(char* stringRecibido)
+int utn_esNumerico(char* stringRecibido)
 {
     int retorno=1;
     int i;
@@ -73,3 +82,58 @@ int esNumerico(char* stringRecibido)
     }
     return retorno;
 }
+int utn_validarRango(char* stringRecibido, int min, int max)
+{
+    int retorno = -1;
+    int auxBuffer;
+    auxBuffer=atoi(stringRecibido);
+    if(auxBuffer >= min && auxBuffer <= max)
+    {
+        retorno = 0;
+    }
+    return retorno;
+}
+int utn_pedirNombre(char* msg, char* msgError, int min, int max, int reintentos, char* resultado)
+{
+    int retorno = -1;
+    int bufferStr[max];
+    if(msg!=NULL && msgError!=NULL && min<=max && reintentos>=0 && resultado!=NULL)
+    {
+        do
+        {
+            if(utn_PedirString(msg, msgError, min, max, &reintentos, bufferStr)== 0)
+            {
+                if(utn_validarNombre(bufferStr)==1)
+                {
+                    strncpy(resultado,bufferStr,max);
+                    retorno=0;
+                    break;
+                }
+                else
+                {
+                    printf("%s 2",msgError);
+                    reintentos--;
+                }
+            }
+        }while(reintentos>=0);
+    }
+    return retorno;
+}
+
+
+int utn_validarNombre(char* stringRecibido)
+{
+    int retorno = 1;
+    int i;
+    for(i=0;stringRecibido!='\0';i++)
+    {
+        if(stringRecibido[i] < 'A' || stringRecibido > 'Z' && stringRecibido < 'a' || stringRecibido > 'z')
+        {
+            retorno = 0;
+            break;
+        }
+    }
+    return retorno;
+}
+
+

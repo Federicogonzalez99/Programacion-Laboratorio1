@@ -3,6 +3,7 @@
 #include <string.h>
 #include "Estudiantes.h"
 #include "utn.h"
+#include "Carrera.h"
 #define QTY_TIPO 3
 
 int main()
@@ -13,7 +14,7 @@ int main()
     eEstudiante arrayEstudiante[QTY_TIPO];
 
     eCarrera arrayCarrera[QTY_TIPO]={
-    {1,"TSP",0}
+    {1,"TSP",0},
     {2,"TSAS",0}
     };
 
@@ -27,7 +28,7 @@ int main()
         switch(opcion)
         {
             case 1: //alta
-
+                    estudiante_alta(arrayEstudiante, QTY_TIPO, &contadorEstudiantes);
                 break;
             case 2:
                 break;

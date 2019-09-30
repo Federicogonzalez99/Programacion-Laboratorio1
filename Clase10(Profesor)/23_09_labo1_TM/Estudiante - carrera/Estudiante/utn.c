@@ -51,6 +51,7 @@ int getString(char* msg, char* msgError, int min, int max, int* reintentos, char
     }
     return retorno;
 }
+
 //------------------------------
 int utn_getName(char* msg, char* msgError, int min, int max, int reintentos, char* resultado)
 {
@@ -80,6 +81,7 @@ int utn_getName(char* msg, char* msgError, int min, int max, int reintentos, cha
     }
     return retorno;
 }
+
 
 int isValidName(char* stringRecibido)   //si fuera un numero podrìa necesitar parametros para validar max y min
 {

@@ -253,28 +253,34 @@
 	<string.h>
 	"utn.h"
 
-1569447743 source:c:\users\fedegonzalez\desktop\utn\clase10(profesor)\23_09_labo1_tm\estudiante - carrera\estudiante\estudiante.c
+1569873134 source:c:\users\fedegonzalez\desktop\utn\clase10(profesor)\23_09_labo1_tm\estudiante - carrera\estudiante\estudiante.c
 	<string.h>
 	<stdio.h>
 	<stdlib.h>
 	"utn.h"
 	"estudiante.h"
 
-1569447743 c:\users\fedegonzalez\desktop\utn\clase10(profesor)\23_09_labo1_tm\estudiante - carrera\estudiante\utn.h
+1569873134 c:\users\fedegonzalez\desktop\utn\clase10(profesor)\23_09_labo1_tm\estudiante - carrera\estudiante\utn.h
 
-1569447743 c:\users\fedegonzalez\desktop\utn\clase10(profesor)\23_09_labo1_tm\estudiante - carrera\estudiante\estudiante.h
+1569873134 c:\users\fedegonzalez\desktop\utn\clase10(profesor)\23_09_labo1_tm\estudiante - carrera\estudiante\estudiante.h
 
-1569447743 source:c:\users\fedegonzalez\desktop\utn\clase10(profesor)\23_09_labo1_tm\estudiante - carrera\estudiante\informes.c
+1569873134 source:c:\users\fedegonzalez\desktop\utn\clase10(profesor)\23_09_labo1_tm\estudiante - carrera\estudiante\informes.c
 	<string.h>
 	<stdio.h>
 	<stdlib.h>
 	"utn.h"
 	"estudiante.h"
 
-1569447743 source:c:\users\fedegonzalez\desktop\utn\clase10(profesor)\23_09_labo1_tm\estudiante - carrera\estudiante\main.c
+1569873134 source:c:\users\fedegonzalez\desktop\utn\clase10(profesor)\23_09_labo1_tm\estudiante - carrera\estudiante\main.c
 	<string.h>
 	<stdio.h>
 	<stdlib.h>
 	"utn.h"
 	"estudiante.h"
+
+1569873134 source:c:\users\fedegonzalez\desktop\utn\clase10(profesor)\23_09_labo1_tm\estudiante - carrera\estudiante\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn.h"
 

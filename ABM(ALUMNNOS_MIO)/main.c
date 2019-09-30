@@ -6,6 +6,7 @@
 #include "Carrera.h"
 #define QTY_TIPO 3
 
+
 int main()
 {
     int opcion;
@@ -31,12 +32,16 @@ int main()
                     estudiante_alta(arrayEstudiante, QTY_TIPO, &contadorEstudiantes);
                 break;
             case 2:
+                    estudiante_modificar(arrayEstudiante, QTY_TIPO);
                 break;
             case 3:
+                estudiante_baja(arrayEstudiante,QTY_TIPO);
                 break;
             case 4:
+                estudiante_listar(arrayEstudiante,QTY_TIPO,arrayCarrera, QTY_TIPO);
                 break;
             case 5:
+                estudiante_ordenarPorString(arrayEstudiante, QTY_TIPO);
                 break;
             case 6:
                 break;

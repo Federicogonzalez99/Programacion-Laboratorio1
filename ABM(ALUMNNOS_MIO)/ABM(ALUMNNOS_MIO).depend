@@ -22,12 +22,11 @@
 
 1569418430 c:\users\alumno\desktop\utn\abm(alumnnos_mio)\carrera.h
 
-1569447742 source:c:\users\fedegonzalez\desktop\utn\abm(alumnnos_mio)\carrera.c
-	"Carrera.h"
+1569883450 source:c:\users\fedegonzalez\desktop\utn\abm(alumnnos_mio)\carrera.c
 
-1569447742 c:\users\fedegonzalez\desktop\utn\abm(alumnnos_mio)\carrera.h
+1569883450 c:\users\fedegonzalez\desktop\utn\abm(alumnnos_mio)\carrera.h
 
-1569784493 source:c:\users\fedegonzalez\desktop\utn\abm(alumnnos_mio)\main.c
+1569883875 source:c:\users\fedegonzalez\desktop\utn\abm(alumnnos_mio)\main.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -35,11 +34,12 @@
 	"utn.h"
 	"Carrera.h"
 
-1569447742 c:\users\fedegonzalez\desktop\utn\abm(alumnnos_mio)\estudiantes.h
+1569883482 c:\users\fedegonzalez\desktop\utn\abm(alumnnos_mio)\estudiantes.h
+	"Carrera.h"
 
-1569784057 c:\users\fedegonzalez\desktop\utn\abm(alumnnos_mio)\utn.h
+1569878409 c:\users\fedegonzalez\desktop\utn\abm(alumnnos_mio)\utn.h
 
-1569784748 source:c:\users\fedegonzalez\desktop\utn\abm(alumnnos_mio)\estudiantes.c
+1569883688 source:c:\users\fedegonzalez\desktop\utn\abm(alumnnos_mio)\estudiantes.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -47,7 +47,7 @@
 	"Carrera.h"
 	"utn.h"
 
-1569784292 source:c:\users\fedegonzalez\desktop\utn\abm(alumnnos_mio)\utn.c
+1569878504 source:c:\users\fedegonzalez\desktop\utn\abm(alumnnos_mio)\utn.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>

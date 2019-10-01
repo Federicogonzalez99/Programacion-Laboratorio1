@@ -36,7 +36,7 @@ int estudiante_alta(eEstudiante array[], int tamanio, int* contadorID)
             utn_PedirEntero("\nIngrese una edad entre 18 y 100: ", "\nError",1,sizeof(int),18,100,2,&array[posicion].edad);
             utn_pedirNombre("\nIngrese Nombre: ", "Error", 1, TEXT_SIZE,2,array[posicion].nombre);
             array[posicion].isEmpty = 0;
-            utn_PedirEntero("\nIngrese carrera (1 o 2): ", "Error", 1, sizeof(int),1,2,2,&array[posicion].idCarrera);
+            utn_PedirEntero("\nIngrese carrera (1.Programacion I - 2.Base de Datos - 3.Matematica): " , "Error", 1, sizeof(int),1,3,2,&array[posicion].idCarrera);
         retorno = 0;
         }
     }
@@ -157,8 +157,8 @@ int estudiante_listar(eEstudiante array[], int tamanio, eMateria arrayMateria[],
                 continue;
             else
             {
-                estudiante_BuscarCarrera(arrayMateria, tamanio, arrayMateria[i].idMateria,DescrMateria);
-                printf("\n ID: %d\n edad: %d\n nombre: %s\n Materia: %d\n descCarrera %s",array[i].idEstudiante,array[i].edad,array[i].nombre, array[i].idMateria, DescrMateria);
+                estudiante_BuscarMateria(arrayMateria, tamanio, arrayMateria[i].idMateria,DescrMateria);
+                printf("\n ID: %d\n edad: %d\n nombre: %s\n Materia: %d\n descCarrera %s",array[i].idEstudiante,array[i].edad,array[i].nombre, arrayMateria[i].idMateria, DescrMateria);
 
 
             }
@@ -242,14 +242,14 @@ int estudiante_listarMaterias(eMateria array[], int tamanio)
                 continue;
             else
             {
-                printf("\n IDMateria: %d - Nombre: %s", array[i].idMateria,array[i].descripcionMateria)
+                printf("\n IDMateria: %d - Nombre: %s", array[i].idMateria,array[i].descripcionMateria);
             }
         }
         retorno = 0;
     }
     return retorno;
 }
-int estudiante_AltaCurso(eCurso array[], int tamanio, eEstudiante arrayEstudiante, int tamanioEst, int* contadorIDCurso)
+int estudiante_AltaCurso(eCurso array[], int tamanio, eEstudiante arrayEstudiante[], int tamanioEst, int* contadorIDCurso)
 {
     int retorno=-1;
     int posicion;
@@ -313,9 +313,26 @@ int estudiante_ListarCursos(eCurso array[], int tamanio)
             if(array[i].isEmpty==1)
                 continue;
             else
-                printf("\n IDCurso: %d - Legajo: %d Materia: &d Nota: %d", array[i].idCurso, array[i].idEstudiante, array[i].idMateria, array[i].nota);
+                printf("\n IDCurso: %d - Legajo: %d Materia: &d Nota: %d",
+                       array[i].idCurso,array[i].idEstudiante, array[i].idMateria, array[i].nota);
+
         }
         retorno=0;
+    }
+    return retorno;
+}
+int estudiante_buscarIDCurso(eCurso array[], int tamanio, int valorBuscado, int posicion)
+{
+    int retorno = -1;
+    if(array!=NULL && tamanio>0)
+    {
+        if(array[posicion].idEstudiante==valorBuscado)
+        {
+            if(array[posicion].isEmpty==0)
+            {
+                retorno = 0;
+            }
+        }
     }
     return retorno;
 }

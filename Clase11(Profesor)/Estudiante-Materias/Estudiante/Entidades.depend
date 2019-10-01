@@ -172,18 +172,18 @@
 1569042992 d:\a-utn\tsp038-programacion i-laboratorio i\clases\clase 9\estudiante1\estudiante\informes.h
 	"estudiante.h"
 
-1569886352 source:c:\users\fedegonzalez\desktop\utn\clase11(profesor)\estudiante-materias\estudiante\estudiante.c
+1569898213 source:c:\users\fedegonzalez\desktop\utn\clase11(profesor)\estudiante-materias\estudiante\estudiante.c
 	<string.h>
 	<stdio.h>
 	<stdlib.h>
 	"utn.h"
 	"estudiante.h"
 
-1569886352 c:\users\fedegonzalez\desktop\utn\clase11(profesor)\estudiante-materias\estudiante\utn.h
+1569898213 c:\users\fedegonzalez\desktop\utn\clase11(profesor)\estudiante-materias\estudiante\utn.h
 
-1569886352 c:\users\fedegonzalez\desktop\utn\clase11(profesor)\estudiante-materias\estudiante\estudiante.h
+1569898213 c:\users\fedegonzalez\desktop\utn\clase11(profesor)\estudiante-materias\estudiante\estudiante.h
 
-1569886352 source:c:\users\fedegonzalez\desktop\utn\clase11(profesor)\estudiante-materias\estudiante\informes.c
+1569898213 source:c:\users\fedegonzalez\desktop\utn\clase11(profesor)\estudiante-materias\estudiante\informes.c
 	<string.h>
 	<stdio.h>
 	<stdlib.h>
@@ -191,10 +191,10 @@
 	"informes.h"
 	"estudiante.h"
 
-1569886352 c:\users\fedegonzalez\desktop\utn\clase11(profesor)\estudiante-materias\estudiante\informes.h
+1569898213 c:\users\fedegonzalez\desktop\utn\clase11(profesor)\estudiante-materias\estudiante\informes.h
 	"estudiante.h"
 
-1569886352 source:c:\users\fedegonzalez\desktop\utn\clase11(profesor)\estudiante-materias\estudiante\main.c
+1569898213 source:c:\users\fedegonzalez\desktop\utn\clase11(profesor)\estudiante-materias\estudiante\main.c
 	<string.h>
 	<stdio.h>
 	<stdlib.h>
@@ -202,7 +202,7 @@
 	"estudiante.h"
 	"informes.h"
 
-1569886352 source:c:\users\fedegonzalez\desktop\utn\clase11(profesor)\estudiante-materias\estudiante\utn.c
+1569898213 source:c:\users\fedegonzalez\desktop\utn\clase11(profesor)\estudiante-materias\estudiante\utn.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>

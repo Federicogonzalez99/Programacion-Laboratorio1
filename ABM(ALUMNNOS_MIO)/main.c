@@ -49,10 +49,14 @@ int main()
                 estudiante_ordenarPorString(arrayEstudiante, QTY_TIPO);
                 break;
             case 6:
+                estudiante_AltaCurso(arrayCurso,QTY_TIPO,arrayEstudiante,QTY_TIPO,&contadorIDCurso);
                 break;
             case 7:
+                estudiante_ListarCursos(arrayCurso,QTY_TIPO);
                 break;
             case 8:
+                utn_pedirNombre("Nombre del alumno", "No existe ese nombre", 1,100,2,buscar);
+                informes_ListarporNombre(arrayEstudiante, QTY_TIPO, arrayCurso,QTY_TIPO,buscar);
                 break;
             case 9:
                 break;
@@ -60,7 +64,7 @@ int main()
                 printf("\nOpcion no valida");
         }
 
-    }while(opcion!=6);
+    }while(opcion!=9);
     return 0;
 }
 

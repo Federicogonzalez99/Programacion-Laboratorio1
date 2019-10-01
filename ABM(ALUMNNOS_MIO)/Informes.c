@@ -5,12 +5,13 @@
 #include "Estudiantes.h"
 #include "Informes.h"
 
-int informes_ListarporNombre(eEstudiante arrayEst[], int tamEst, eCurso arrayCurso[], int tamCurso, char* criterio)
+int informes_ListarporNombre(eEstudiante arrayEst[], int tamEst, eCurso arrayCurso[], int tamCurso, char* criterio, eMateria arrayMateria[], int tamMateria)
 {
     int retorno = -1;
     int i;
     int j;
     int encontrado;
+    char descripcion[30];
     if(arrayEst!=NULL && tamEst>0 && arrayCurso!=NULL && tamCurso>0 && criterio!=NULL)
     {
         for(i=0;i<tamEst;i++)
@@ -27,10 +28,17 @@ int informes_ListarporNombre(eEstudiante arrayEst[], int tamEst, eCurso arrayCur
                     encontrado = estudiante_buscarIDCurso(arrayCurso,tamCurso,arrayEst[i].idEstudiante,j);
                     if(encontrado==0)
                     {
-                        printf("\nListado ID Estudiante: %d  ID Materia: %d ", arrayEst[i].idEstudiante,arrayCurso[j].idMateria);
+                        if(estudiante_buscarDescrpMateria(arrayMateria, tamMateria,arrayCurso[j].idMateria,&descripcion )==0)
+                        {
+                             printf("\nListado ID Estudiante: %d - ID Materia: %d - Materia: %s - Nota: %d\n", arrayEst[i].idEstudiante,arrayCurso[j].idMateria,descripcion,arrayCurso[j].nota);
+                        }
+
+
                     }
                 }
             }
         }
+        retorno = 0;
     }
+    return retorno;
 }

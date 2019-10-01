@@ -36,7 +36,7 @@ int estudiante_alta(eEstudiante array[], int tamanio, int* contadorID)
             utn_PedirEntero("\nIngrese una edad entre 18 y 100: ", "\nError",1,sizeof(int),18,100,2,&array[posicion].edad);
             utn_pedirNombre("\nIngrese Nombre: ", "Error", 1, TEXT_SIZE,2,array[posicion].nombre);
             array[posicion].isEmpty = 0;
-            utn_PedirEntero("\nIngrese carrera (1.Programacion I - 2.Base de Datos - 3.Matematica): " , "Error", 1, sizeof(int),1,3,2,&array[posicion].idCarrera);
+            utn_PedirEntero("\nIngrese carrera (1.Programacion I - 2.Base de Datos - 3.Matematica): " , "Error", 1, sizeof(int),1,3,2,&array[posicion].idMateria);
         retorno = 0;
         }
     }
@@ -136,7 +136,7 @@ int estudiante_baja(eEstudiante array [], int tamanio)
         {
             array[posicion].isEmpty=1;
             array[posicion].idEstudiante=0;
-            array[posicion].idCarrera=0;
+            array[posicion].idMateria=0;
             array[posicion].edad=0;
             strcpy(array[posicion].nombre,"");
             retorno=0;
@@ -200,7 +200,7 @@ int estudiante_ordenarPorString(eEstudiante array[],int size)                   
             bufferId=array[i].idEstudiante;                                   //cambiar campo id
             bufferIsEmpty=array[i].isEmpty;
             bufferInt=array[i].edad;                                //cambiar campo varInt
-            bufferCarrera=array[i].idCarrera;
+            bufferCarrera=array[i].idMateria;
             //bufferFloat=array[i].varFloat;                            //cambiar campo varFloat
             //strcpy(bufferLongString,array[i].varLongString);          //cambiar campo varLongString
 
@@ -212,7 +212,7 @@ int estudiante_ordenarPorString(eEstudiante array[],int size)                   
                 array[j + 1].idEstudiante=array[j].idEstudiante;                                //cambiar campo id
                 array[j + 1].isEmpty=array[j].isEmpty;
                 array[j + 1].edad=array[j].edad;                        //cambiar campo varInt
-                array[j + 1].idCarrera=array[j].idCarrera;                        //cambiar campo varInt
+                array[j + 1].idMateria=array[j].idMateria;                        //cambiar campo varInt
                 //array[j + 1].varFloat=array[j].varFloat;                    //cambiar campo varFloat
                 //strcpy(array[j + 1].varLongString,array[j].varLongString);  //cambiar campo varLongString
 
@@ -222,7 +222,7 @@ int estudiante_ordenarPorString(eEstudiante array[],int size)                   
             array[j + 1].idEstudiante=bufferId;                                        //cambiar campo id
             array[j + 1].isEmpty=bufferIsEmpty;
             array[j + 1].edad=bufferInt;                                                        //cambiar campo varInt
-            array[j + 1].idCarrera=bufferCarrera;                                                        //cambiar campo varInt
+            array[j + 1].idMateria=bufferCarrera;                                                        //cambiar campo varInt
             //array[j + 1].varFloat=bufferFloat;                                                    //cambiar campo varFloat
             //strcpy(array[j + 1].varLongString,bufferLongString);                                  //cambiar campo varLongString
         }
@@ -265,7 +265,7 @@ int estudiante_AltaCurso(eCurso array[], int tamanio, eEstudiante arrayEstudiant
         {
             (*contadorIDCurso)++;
             array[posicion].idCurso=*contadorIDCurso;
-            utn_PedirEntero("\nIngrese el ID del alumno", "Error en el ID", 1, sizeof(int),1,tamanio,2,&legajoEstudiante);
+            utn_PedirEntero("\nIngrese el ID del alumno: ", "Error en el ID", 1, sizeof(int),1,tamanio,2,&legajoEstudiante);
             if(estudiante_buscarID(arrayEstudiante,tamanioEst,legajoEstudiante,&legajoEncontrado)==0)
             {
                 array[posicion].idEstudiante=legajoEstudiante;
@@ -302,10 +302,11 @@ int estudiante_buscarEmptyCurso(eCurso array[], int tamanio, int* posicion)
     }
     return retorno;
 }
-int estudiante_ListarCursos(eCurso array[], int tamanio)
+int estudiante_ListarCursos(eCurso array[], int tamanio, eMateria arrayMateria[], int tamMateria)
 {
     int i;
     int retorno = -1;
+    char descripcion[30];
     if(array!=NULL && tamanio >0)
     {
         for(i=0;i<tamanio;i++)
@@ -313,8 +314,11 @@ int estudiante_ListarCursos(eCurso array[], int tamanio)
             if(array[i].isEmpty==1)
                 continue;
             else
-                printf("\n IDCurso: %d - Legajo: %d Materia: &d Nota: %d",
-                       array[i].idCurso,array[i].idEstudiante, array[i].idMateria, array[i].nota);
+                if(estudiante_buscarDescrpMateria(arrayMateria,tamMateria,array[i].idMateria,&descripcion)==0)
+                {
+                    printf("\n IDCurso: %d - Legajo: %d - IDMateria: %d - Nota: %d - Materia: %s",
+                       array[i].idCurso,array[i].idEstudiante, array[i].idMateria, array[i].nota,descripcion);
+                }
 
         }
         retorno=0;
@@ -336,5 +340,45 @@ int estudiante_buscarIDCurso(eCurso array[], int tamanio, int valorBuscado, int 
     }
     return retorno;
 }
+
+int estudiante_InicializarCurso(eCurso array[], int tamanio)
+
+{
+    int retorno = -1;
+    int i;
+    if(array!=NULL && tamanio>0)
+    {
+    for(i=0; i<tamanio; i++)
+        {
+            array[i].isEmpty = 1;
+        }
+        retorno = 0;
+    }
+    return retorno;
+}
+
+int estudiante_buscarDescrpMateria(eMateria array[], int tamanio, int IDmateria, char* descripcion)
+{
+    int i;
+    int retorno = -1;
+
+
+        for(i=0;i<tamanio;i++)
+        {
+            if(array[i].idMateria==IDmateria)
+            {
+                strcpy(descripcion,array[i].descripcionMateria);
+
+                retorno = 0;
+            }
+        }
+
+    return retorno;
+}
+
+
+
+
+
 
 

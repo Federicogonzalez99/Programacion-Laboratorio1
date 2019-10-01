@@ -12,7 +12,7 @@ typedef struct
     int idEstudiante;
     char nombre[TEXT_SIZE];
     int edad;
-    int idCarrera;
+    int idMateria;
     int isEmpty;
 }eEstudiante;
 typedef struct
@@ -36,5 +36,7 @@ int estudiante_ordenarPorString(eEstudiante array[],int tamanio);
 int estudiante_listarMaterias(eMateria arrayMateria[], int tamanio);
 int estudiante_AltaCurso(eCurso array[], int tamanio, eEstudiante arrayEstudiante[], int tamanioEst, int* contadorIDCurso);
 int estudiante_buscarEmptyCurso(eCurso array[], int tamanio, int* posicion);
-int estudiante_ListarCursos(eCurso array[], int tamanio);
+int estudiante_ListarCursos(eCurso array[], int tamanio, eMateria arrayMateria[], int tamMateria);
 int estudiante_buscarIDCurso(eCurso array[], int tamanio, int valorBuscado, int posicion);
+int estudiante_InicializarCurso(eCurso array[], int tamanio);
+int estudiante_buscarDescrpMateria(eMateria arrayMateria[], int tamanio, int IDmateria, char* descripcion);

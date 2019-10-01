@@ -16,14 +16,13 @@ int main()
 
     eEstudiante arrayEstudiante[QTY_TIPO];
     eCurso arrayCurso[QTY_TIPO];
-    estudiante_Inicializar(arrayCurso, QTY_TIPO);
 
     eMateria arrayMateria[QTY_TIPO]={
         {1,"Programacion I",0},
         {2,"Base de Datos",0},
         {3,"Matematica",0}
         };
-
+    estudiante_InicializarCurso(arrayCurso, QTY_TIPO);
     estudiante_Inicializar(arrayEstudiante, QTY_TIPO);
 
 
@@ -52,11 +51,11 @@ int main()
                 estudiante_AltaCurso(arrayCurso,QTY_TIPO,arrayEstudiante,QTY_TIPO,&contadorIDCurso);
                 break;
             case 7:
-                estudiante_ListarCursos(arrayCurso,QTY_TIPO);
+                estudiante_ListarCursos(arrayCurso,QTY_TIPO,arrayMateria,QTY_TIPO);
                 break;
             case 8:
-                utn_pedirNombre("Nombre del alumno", "No existe ese nombre", 1,100,2,buscar);
-                informes_ListarporNombre(arrayEstudiante, QTY_TIPO, arrayCurso,QTY_TIPO,buscar);
+                utn_pedirNombre("Nombre del alumno: ", "No existe ese nombre", 1,100,2,buscar);
+                informes_ListarporNombre(arrayEstudiante, QTY_TIPO, arrayCurso,QTY_TIPO,buscar,arrayMateria,QTY_TIPO);
                 break;
             case 9:
                 break;

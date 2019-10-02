@@ -1,0 +1,24 @@
+# depslib dependency file v1.0
+1570022221 source:c:\users\alumno\desktop\utn2\tp_02\arrayemployees.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayEmployees.h"
+
+1570022227 c:\users\alumno\desktop\utn2\tp_02\arrayemployees.h
+
+1570022221 source:c:\users\alumno\desktop\utn2\tp_02\main.c
+	<stdio.h>
+	<stdlib.h>
+	"ArrayEmployees.h"
+	"utn.h"
+
+1570022221 c:\users\alumno\desktop\utn2\tp_02\utn.h
+
+1570022248 source:c:\users\alumno\desktop\utn2\tp_02\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayEmployees.h"
+	"utn.h"
+

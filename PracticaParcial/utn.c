@@ -187,3 +187,4 @@ int utn_esChar(char charRecibido)
         retorno=0;
     return retorno;
 }
+

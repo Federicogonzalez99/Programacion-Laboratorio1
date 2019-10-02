@@ -23,7 +23,7 @@ int estudiante_alta(eEstudiante array[], int tamanio, int* contadorID)
 {
     int retorno = -1;
     int posicion;
-    if(array != NULL && tamanio > 0 && contadorID != NULL)
+    if(array != NULL && tamanio >0 && contadorID != NULL)
     {
         if(estudiante_buscarEmpty(array, tamanio, &posicion)==-1)
         {
@@ -37,7 +37,7 @@ int estudiante_alta(eEstudiante array[], int tamanio, int* contadorID)
             utn_pedirNombre("\nIngrese Nombre: ", "Error", 1, TEXT_SIZE,2,array[posicion].nombre);
             array[posicion].isEmpty = 0;
             utn_PedirEntero("\nIngrese carrera (1.Programacion I - 2.Base de Datos - 3.Matematica): " , "Error", 1, sizeof(int),1,3,2,&array[posicion].idMateria);
-        retorno = 0;
+            retorno = 0;
         }
     }
     return retorno;

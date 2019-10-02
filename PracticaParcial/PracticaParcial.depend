@@ -1,0 +1,32 @@
+# depslib dependency file v1.0
+1569987175 source:c:\users\fedegonzalez\desktop\utn\abm(alumnnos_mio)\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn.h"
+
+1569944275 c:\users\fedegonzalez\desktop\utn\abm(alumnnos_mio)\utn.h
+
+1569988032 source:c:\users\fedegonzalez\desktop\utn\practicaparcial\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Cliente.h"
+	"utn.h"
+
+1569987644 c:\users\fedegonzalez\desktop\utn\practicaparcial\cliente.h
+
+1569987372 c:\users\fedegonzalez\desktop\utn\practicaparcial\utn.h
+
+1569987372 source:c:\users\fedegonzalez\desktop\utn\practicaparcial\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn.h"
+
+1569988032 source:c:\users\fedegonzalez\desktop\utn\practicaparcial\cliente.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Cliente.h"
+	"utn.h"
+

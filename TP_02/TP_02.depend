@@ -22,3 +22,26 @@
 	"ArrayEmployees.h"
 	"utn.h"
 
+1570141956 source:c:\users\fedegonzalez\desktop\utn\tp_02\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayEmployees.h"
+	"utn.h"
+
+1570141358 c:\users\fedegonzalez\desktop\utn\tp_02\arrayemployees.h
+
+1570141358 c:\users\fedegonzalez\desktop\utn\tp_02\utn.h
+
+1570141114 source:c:\users\fedegonzalez\desktop\utn\tp_02\arrayemployees.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayEmployees.h"
+
+1570141994 source:c:\users\fedegonzalez\desktop\utn\tp_02\main.c
+	<stdio.h>
+	<stdlib.h>
+	"ArrayEmployees.h"
+	"utn.h"
+
